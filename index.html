@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>ZYNTRIX AI — Build. Debug. Deploy.</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: #080b18;
+      color: #f5f6ff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 7%;
+      border-bottom: 1px solid #20243b;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: #9b7bff; }
+
+    nav a {
+      color: #c6c8dc;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 105px 20px 75px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #51418b;
+      color: #b9a5ff;
+      border-radius: 30px;
+      padding: 9px 16px;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.1;
+      margin: 28px 0 18px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #a98bff, #54c9ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 570px;
+      margin: auto;
+      color: #a5a9c2;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .actions {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 23px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      background: linear-gradient(90deg, #8058ed, #397de9);
+      color: white;
+    }
+
+    .secondary {
+      background: #151a30;
+      border: 1px solid #343b5e;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 25px 22px 80px;
+    }
+
+    .feature {
+      background: #11162a;
+      border: 1px solid #272d49;
+      border-radius: 15px;
+      padding: 26px;
+    }
+
+    .feature h2 {
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      color: #9da4c0;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #20243b;
+      color: #777f9d;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ZYNTRIX<span> AI</span></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="tag">THE NEXT GENERATION AI DEVELOPER</div>
+      <h1>Build smarter.<br><span>Create without limits.</span></h1>
+      <p>
+        Your AI-powered workspace to debug code, build stunning
+        websites, solve errors and bring your ideas to life.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#features">Explore ZYNTRIX AI</a>
+        <a class="btn secondary" href="#features">Discover Features</a>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <article class="feature">
+        <h2>⚡ AI Debugger</h2>
+        <p>Understand code errors, explore possible fixes and improve your code.</p>
+      </article>
+      <article class="feature">
+        <h2>✦ AI Website Builder</h2>
+        <p>Turn your ideas into beautiful website designs with AI assistance.</p>
+      </article>
+      <article class="feature">
+        <h2>🚀 Smart Deployment</h2>
+        <p>Prepare your projects for hosting and deployment.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2026 ZYNTRIX AI. Built for creators.</footer>
+</body>
+</html>
