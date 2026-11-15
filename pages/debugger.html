@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Debug your code with the ZYNTRIX AI debugger workspace.">
+  <title>AI Debugger | ZYNTRIX AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/debugger.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="../dashboard.html">ZYNTRIX AI</a>
+    <nav class="nav-links">
+      <a href="../dashboard.html">Dashboard</a>
+      <a href="builder.html">Website Builder</a>
+    </nav>
+  </header>
+
+  <main class="debugger-page">
+    <div class="debugger-container">
+
+      <div class="debugger-heading">
+        <h1>AI Code Debugger</h1>
+        <p>Paste your code below to start a debugging demo.</p>
+      </div>
+
+      <section class="debugger-panel">
+        <div class="debugger-toolbar">
+          <h2>Code Editor</h2>
+
+          <select class="debugger-select" id="languageSelect">
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
+
+        <textarea
+          class="debugger-editor"
+          id="codeInput"
+          placeholder="Paste your code here..."
+          spellcheck="false"
+        ></textarea>
+
+        <div style="margin-top: 18px;">
+          <button class="debugger-button" id="debugButton" type="button">
+            Analyze Code
+          </button>
+        </div>
+
+        <div class="debugger-result">
+          <h3>Analysis Result</h3>
+          <p id="debugResult" aria-live="polite">
+            Your demo analysis will appear here.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-current-year>2026</span> ZYNTRIX AI. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/debugger.js"></script>
+</body>
+</html>
