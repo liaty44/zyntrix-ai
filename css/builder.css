@@ -1,0 +1,126 @@
+
+/* ZYNTRIX AI — WEBSITE BUILDER STYLES */
+
+.builder-page {
+  min-height: 100vh;
+  background: #080b18;
+  color: #f5f6ff;
+  font-family: Arial, sans-serif;
+}
+
+.builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  background: #11162a;
+  border-bottom: 1px solid #292e4b;
+}
+
+.builder-title {
+  color: #a78bfa;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.builder-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  min-height: calc(100vh - 65px);
+}
+
+.builder-sidebar {
+  padding: 24px;
+  background: #11162a;
+  border-right: 1px solid #292e4b;
+}
+
+.builder-sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.builder-prompt {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px;
+  resize: vertical;
+  color: white;
+  background: #090e20;
+  border: 1px solid #343a5a;
+  border-radius: 10px;
+  outline: none;
+}
+
+.builder-prompt:focus {
+  border-color: #a78bfa;
+}
+
+.builder-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px;
+  color: white;
+  background: #7955e8;
+  border: none;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.builder-button:hover {
+  background: #6842d5;
+}
+
+.builder-preview {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.builder-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.builder-preview-frame {
+  flex: 1;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: #11162a;
+  border: 1px dashed #51418b;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.builder-preview-frame p {
+  color: #a6abc3;
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.builder-status {
+  margin-top: 15px;
+  color: #c4b5fd;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .builder-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #292e4b;
+  }
+
+  .builder-preview-frame {
+    min-height: 350px;
+  }
+}
