@@ -4,22 +4,25 @@
 const express = require("express");
 const router = express.Router();
 
-// AI debugging placeholder
-router.post("/analyze", (req, res) => {
-  const { code, language } = req.body || {};
+const { analyzeCode } = require("../services/ai");
 
-  if (typeof code !== "string" || !code.trim()) {
-    return res.status(400).json({
-      success: false,
-      message: "Please provide code to analyze."
-    });
+router.post("/analyze", async (req, res, next) => {
+  try {
+    const { code, language } = req.body || {};
+
+    if (typeof code !== "string" || !code.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: "Please provide code to analyze."
+      });
+    }
+
+    const result = await analyzeCode(code, language);
+
+    return res.status(result.success ? 200 : 501).json(result);
+  } catch (error) {
+    next(error);
   }
-
-  res.status(501).json({
-    success: false,
-    message: "AI debugging service is not connected yet.",
-    language: language || "unknown"
-  });
 });
 
 module.exports = router;
