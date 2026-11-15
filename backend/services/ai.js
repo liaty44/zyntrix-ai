@@ -1,21 +1,32 @@
 
 "use strict";
 
-/*
-  ZYNTRIX AI — AI SERVICE
-  Placeholder until a real AI provider is connected.
-*/
+const API_KEY = process.env.AI_API_KEY;
+
+async function callAI(prompt) {
+  if (!API_KEY) {
+    return {
+      success: false,
+      message: "AI provider is not configured. Add an API key privately."
+    };
+  }
+
+  // Provider integration will be added after choosing
+  // a provider and its official API endpoint.
+  return {
+    success: false,
+    message: "AI provider integration is not implemented yet."
+  };
+}
 
 async function analyzeCode(code, language) {
   if (typeof code !== "string" || !code.trim()) {
     throw new Error("Code is required.");
   }
 
-  return {
-    success: false,
-    message: "AI code analysis is not connected yet.",
-    language: language || "unknown"
-  };
+  return callAI(
+    `Analyze this ${language || "unknown"} code and explain possible bugs:\n${code}`
+  );
 }
 
 async function generateWebsite(prompt) {
@@ -23,10 +34,9 @@ async function generateWebsite(prompt) {
     throw new Error("Website prompt is required.");
   }
 
-  return {
-    success: false,
-    message: "AI website generation is not connected yet."
-  };
+  return callAI(
+    `Create a website based on this description:\n${prompt}`
+  );
 }
 
 module.exports = {
