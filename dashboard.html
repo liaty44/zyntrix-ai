@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your ZYNTRIX AI workspace.">
+  <title>Dashboard — ZYNTRIX AI</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #080b18;
+      color: #f5f6ff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 6%;
+      background: #0e1325;
+      border-bottom: 1px solid #252b48;
+    }
+
+    .logo {
+      color: #a78bfa;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .top-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    a {
+      color: #c5c8dc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #b7a1ff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: 45px auto;
+    }
+
+    .welcome {
+      margin-bottom: 35px;
+    }
+
+    .welcome h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .welcome h1 span {
+      color: #a78bfa;
+    }
+
+    .welcome p {
+      color: #a6abc3;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .tool-card {
+      padding: 26px;
+      border-radius: 15px;
+      background: #11162a;
+      border: 1px solid #292e4b;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+      border-color: #8b6cf0;
+    }
+
+    .symbol {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .tool-card h3 {
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .tool-card p {
+      color: #a6abc3;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      color: #b7a1ff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .workspace {
+      margin-top: 38px;
+      padding: 28px;
+      background: #11162a;
+      border: 1px solid #292e4b;
+      border-radius: 15px;
+    }
+
+    .workspace h2 {
+      margin-bottom: 12px;
+    }
+
+    .workspace p {
+      color: #a6abc3;
+      line-height: 1.7;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 12px;
+      background: #25203b;
+      border-radius: 20px;
+      color: #c4b5fd;
+      font-size: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 55px;
+      border-top: 1px solid #252b48;
+      color: #777f9d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .top-links {
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      .container {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">ZYNTRIX AI</div>
+
+    <nav class="top-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h1>Welcome to your <span>Workspace.</span></h1>
+      <p>
+        Your creative journey starts here.
+        Choose an AI tool and start working on your next idea.
+      </p>
+    </section>
+
+    <h2 class="section-title">Your AI Tools</h2>
+
+    <section class="tools">
+      <article class="tool-card">
+        <div class="symbol">⌘</div>
+        <h3>AI Code Debugger</h3>
+        <p>Analyze code, understand errors and explore possible fixes.</p>
+        <a class="tool-link" href="pages/debugger.html">Open Debugger →</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="symbol">✦</div>
+        <h3>Website Builder</h3>
+        <p>Turn your ideas into website designs and code.</p>
+        <a class="tool-link" href="pages/builder.html">Open Builder →</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="symbol">◈</div>
+        <h3>My Projects</h3>
+        <p>Explore and organize your creative projects.</p>
+        <a class="tool-link" href="pages/projects.html">View Projects →</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="symbol">↗</div>
+        <h3>Deployment Center</h3>
+        <p>Get guidance for publishing your websites online.</p>
+        <a class="tool-link" href="pages/deployment.html">Open Deployment →</a>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <h2>Your Workspace</h2>
+      <p>
+        Your project workspace is being prepared.
+        AI tools, project saving and account features will be
+        connected as we build the backend.
+      </p>
+      <span class="status">Frontend preview — tools not connected yet</span>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ZYNTRIX AI. Built for creators.
+  </footer>
+</body>
+</html>
