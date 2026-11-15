@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Builder | ZYNTRIX AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/builder.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../dashboard.html">ZYNTRIX AI</a>
+    <nav class="nav-links">
+      <a href="../dashboard.html">Dashboard</a>
+      <a href="debugger.html">Debugger</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container" style="padding:45px 0;">
+    <h1>AI Website Builder</h1>
+    <p style="color:#a6abc3;margin:12px 0 25px;">
+      Describe the website you want to create.
+    </p>
+
+    <section class="card">
+      <label for="websitePrompt">Your website idea</label>
+      <textarea
+        class="form-control"
+        id="websitePrompt"
+        rows="7"
+        placeholder="Example: Create a modern portfolio website..."
+        style="margin:12px 0 18px;"
+      ></textarea>
+
+      <button class="btn btn-primary" id="buildButton" type="button">
+        Generate Website
+      </button>
+
+      <div class="card" style="margin-top:22px;">
+        <h3>Website Preview</h3>
+        <p id="websitePreview" aria-live="polite">
+          Your preview will appear here.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    ZYNTRIX AI — Website Builder Demo
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/builder.js"></script>
+</body>
+</html>
